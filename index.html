@@ -15,6 +15,7 @@
     <meta property="og:image" content="http://techparty.tokyo/ogp.jpg" />
     <meta property="og:image:width" content="4032" />
     <meta property="og:image:height" content="3024" />
+
     <title>TechParty.Tokyo</title>
     <link href="bulma.min.css" rel="stylesheet">
 
@@ -45,11 +46,13 @@
         color: #def;
       }
       .dj-masuidrive {
-        width: 75px;
-        height: 150px;
-        position: absolute;
+        position: fixed;
         bottom: 10px;
         right: 10px;
+      }
+      .dj-masuidrive img {
+        width: 75px;
+        height: 150px;
       }
       .has-background-white-transparent {
         background-color: rgba(255, 255, 255, 0.5);
@@ -58,10 +61,10 @@
         margin-top: 4px;
         margin-bottom: 4px;
       }
-      .fb-like {
+      .fb-like-frame {
         position: absolute;
         top: 2px;
-        right: 2px;
+        right: 8px;
       }
     </style>
   </head>
@@ -72,7 +75,7 @@
         <div class="hero-head">
           <nav class="tabs is-boxed is-fullwidth has-background-white-transparent" >
             <div class="container has-text-weight-bold has-text-centered latest-event">
-              8/20 19:00- "POP TECH PARTY 2018 Summer"
+              8/20 19:00- "POP TECH PARTY 2018 Summer" [Tickets soon]
             </div>
           </nav>
         </div>
@@ -97,15 +100,17 @@
           </div>
         </nav>
       </div>
-      <a href="http://masuidrive.com/"><img src="dj-masuidrive-bg-black.png" class="dj-masuidrive" /></a>
-        <div class="fb-like" 
-    data-href="https://www.your-domain.com/your-page.html" 
-    data-layout="standard" 
-    data-action="like" 
-    data-show-faces="true">
-  </div>
+      <a href="http://masuidrive.com/" class="dj-masuidrive"><img src="dj-masuidrive-bg-black.png" /></a>
     </section>
-    <script>(function(d, s, id) {
+    <div class="fb-like-frame">
+    <div class="fb-like" 
+      data-href="https://techparty.tokyo/" 
+      data-layout="button_count" 
+      data-action="like" 
+      data-show-faces="true">
+    </div>
+  </div>
+<script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
