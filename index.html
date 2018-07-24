@@ -58,10 +58,16 @@
         margin-top: 4px;
         margin-bottom: 4px;
       }
+      .fb-like {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+      }
     </style>
   </head>
 
   <body>
+    <div id="fb-root"></div>
     <section class="hero is-fullheight">
         <div class="hero-head">
           <nav class="tabs is-boxed is-fullwidth has-background-white-transparent" >
@@ -92,7 +98,20 @@
         </nav>
       </div>
       <a href="http://masuidrive.com/"><img src="dj-masuidrive-bg-black.png" class="dj-masuidrive" /></a>
+        <div class="fb-like" 
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true">
+  </div>
     </section>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
 
