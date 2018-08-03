@@ -41,6 +41,7 @@
           -2px  2px 8px rgba(0, 0, 0, .8),
            2px -2px 8px rgba(0, 0, 0, .8),
           -2px -2px 8px rgba(0, 0, 0, .8);
+        font-size: 100%;
       }
       .hero a {
         color: #def;
@@ -66,27 +67,74 @@
         top: 2px;
         right: 8px;
       }
+      .party-title {
+        font-size: 110%;
+      }
+      .party a {
+        color: #EE1824; 
+        font-weight: bold;
+      }
+      h1 + p {
+        margin-top: 1.0em;
+      }
+      .is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
     </style>
   </head>
 
   <body>
     <div id="fb-root"></div>
     <section class="hero is-fullheight">
-        <div class="hero-head">
+      <!-- div class="hero-head">
           <nav class="tabs is-boxed is-fullwidth has-background-white-transparent" >
             <div class="container has-text-weight-bold has-text-centered latest-event">
-              8/20 19:00- "POP TECH PARTY 2018 Summer" [Tickets soon]
+
             </div>
           </nav>
-        </div>
-          <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            TechParty.Tokyo
-          </h1>
-          <h2 class="subtitle">
-              Let's have a party to build "<a href="https://en.wikipedia.org/wiki/Interpersonal_ties">Weak Ties</a>" between engineers and all the other people.
-          </h2>
+        </div -->
+        <div class="hero-body">
+          <div class="container ">
+            <!-- h2 class="subtitle">
+                Let's have a party to build "<a href="https://en.wikipedia.org/wiki/Interpersonal_ties">Weak Ties</a>" between engineers and all the other people.
+            </h2 -->
+
+            <div class="columns">
+                <div class="column is-one-third has-text-centered is-vertical-center">
+                  <div>
+                  <h1 class="title">
+                    TechParty.Tokyo
+                  </h1>
+                  <h2 class="subtitle">
+                      Let's have a party to build "Weak Ties" between engineers and all the other people.
+                  </h2>
+                </div>                </div>
+                <div class="column">
+                    <div class="box party">
+                      <h1 class="party-title"><a href="https://www.facebook.com/events/1763941290371549/
+                        ">8/20 19:00-23:00 "POP TECH PARTY -ポプテク- 2018 Summer</a></h1>
+                      <p>
+                                      「エンジニアのゆるいつながり」をテーマとして、エンジニアを中心としたDJによる音楽とエンターテインメントを楽しみながら、技術話を共有し合い、交流する場として本イベントを企画しました。 <a href="https://www.facebook.com/events/1763941290371549/
+                                      ">→ Go</a>
+                                    </p>
+                                    <p class="has-text-right">
+                                      2018/08/03 by DJ masuidrive
+                                    </p>
+                    </div>
+
+                    <div class="box party">
+                      <p>
+                          日本のITエンジニアにも業界内外との交流や新しい音楽に触れる場としてパーティ文化が根付いて欲しいと思い、TechParty.Tokyoをスタート。
+                        </p>
+                        <p class="has-text-right">
+                            2018/07/25 by DJ masuidrive
+                          </p>
+            </div>
+              </div>
+              
+            </div>
         </div>
       </div>
       <div class="hero-foot">
@@ -94,8 +142,10 @@
           <div class="container">
             <ul>
       <!--
-              <li class="is-active"><a>History</a></li>
-      -->
+              <li class="is-active">
+                  History
+              </li>
+            -->
             </ul>
           </div>
         </nav>
@@ -117,6 +167,15 @@
     js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123360978-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123360978-1');
+</script>
   </body>
 </html>
 
